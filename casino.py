@@ -6,11 +6,11 @@ from keras.layers import LSTM, Dense
 # Đọc dữ liệu từ file CSV
 df = pd.read_csv('arima2.csv')
 
-# Chuyển cột 'timestamp' thành kiểu dữ liệu ngày giờ
-df['timestamp'] = pd.to_datetime(df['timestamp'])
+# Chuyển cột 'Date' thành kiểu dữ liệu ngày giờ
+df['Date'] = pd.to_datetime(df['Date'])
 
 # Sắp xếp dữ liệu theo thời gian
-df.sort_values('timestamp', inplace=True)
+df.sort_values('Date', inplace=True)
 
 # Chuẩn bị dữ liệu
 data = df['value'].values

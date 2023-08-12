@@ -4,7 +4,7 @@ from keras.models import Sequential
 from keras.layers import LSTM, Dense
 
 # Đọc dữ liệu từ file CSV
-df = pd.read_csv('path_to_your_csv_file.csv')
+df = pd.read_csv('arima2.csv')
 
 # Chuyển cột 'timestamp' thành kiểu dữ liệu ngày giờ
 df['timestamp'] = pd.to_datetime(df['timestamp'])

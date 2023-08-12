@@ -19,4 +19,4 @@ date,value
 `````
 Trong ví dụ trên, mỗi dòng trong file CSV đại diện cho một thời điểm ghi nhận giá trị máy chủ, bao gồm cột 'date' và 'value'.
 
-Lưu ý rằng đoạn mã trong ví dụ trên sử dụng dữ liệu ngẫu nhiên để minh họa cách sử dụng mô hình Seq2Seq. Trong thực tế, bạn cần có dữ liệu lịch sử thực tế từ máy chủ casino để huấn luyện mô hình và dự đoán giá trị máy chủ trả về.
+Lưu ý rằng đoạn mã trong ví dụ trên (casino.py) sử dụng dữ liệu ngẫu nhiên (arima2.csv) để minh họa cách sử dụng mô hình Seq2Seq. Trong thực tế, bạn cần có dữ liệu lịch sử thực tế từ máy chủ casino để huấn luyện mô hình và dự đoán giá trị máy chủ trả về.

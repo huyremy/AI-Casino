@@ -3,6 +3,7 @@ import numpy as np
 from keras.models import Sequential
 from keras.layers import LSTM, Dense
 # Dự đoán casino by huynq@isi.com.vn
+
 # Đọc dữ liệu từ file CSV
 df = pd.read_csv('arimax2.csv')
 

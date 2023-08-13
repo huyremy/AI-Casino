@@ -37,3 +37,11 @@ print('Độ chính xác trên tập test:', accuracy)
 
 # Dự đoán giá trị máy chủ trả về
 predictions = model.predict(test_data[:, np.newaxis, np.newaxis])
+
+print('Predicted value:', predictions[0][0])
+
+# Áp dụng ngưỡng
+threshold = 0.5
+binary_prediction = 1 if predictions[0][0] >= threshold else 0
+
+print('Dự đoán ván tiếp theo:', binary_prediction)

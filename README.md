@@ -1,5 +1,6 @@
 # AI-Casino
 seq2seq casino
+HuyRemy - huynq@isi.com.vn - https://ai.matilda.vn 
 --------
 Dưới đây là mô tả cấu trúc của file CSV được sử dụng trong ví dụ trên:
 

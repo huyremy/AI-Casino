@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 from keras.models import Sequential
 from keras.layers import LSTM, Dense
-
+# Dự đoán casino by huynq@isi.com.vn
 # Đọc dữ liệu từ file CSV
-df = pd.read_csv('arima2.csv')
+df = pd.read_csv('arimax2.csv')
 
 # Chuyển cột 'Date' thành kiểu dữ liệu ngày giờ
 df['Date'] = pd.to_datetime(df['Date'])
@@ -37,7 +37,6 @@ print('Độ chính xác trên tập test:', accuracy)
 
 # Dự đoán giá trị máy chủ trả về
 predictions = model.predict(test_data[:, np.newaxis, np.newaxis])
-
 print('Predicted value:', predictions[0][0])
 
 # Áp dụng ngưỡng

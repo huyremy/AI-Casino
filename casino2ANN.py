@@ -42,10 +42,8 @@ next_date_value = data['Date'].max() + 1
 next_date_value_scaled = scaler.transform(np.array([[next_date_value]]))
 predicted_value = model.predict(next_date_value_scaled)[0][0]
 print(f'Predicted Value for the next date: {predicted_value:.2f}')
-# Áp dụng ngưỡng
-threshold = 0.5
 
-if (predicted_value >= threshold): 
+if (predicted_value >= 0.5): 
     print('Dự đoán ván tiếp theo: 1')
 else: 
     print('Dự đoán ván tiếp theo: 0')

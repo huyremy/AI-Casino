@@ -44,7 +44,7 @@ predicted_value = model.predict(next_date_value_scaled)[0][0]
 print(f'Predicted Value for the next date: {predicted_value:.2f}')
 # Áp dụng ngưỡng
 threshold = 0.5
-print()
+
 if (predicted_value >= threshold): 
     print('Dự đoán ván tiếp theo: 1')
 else: 

@@ -3,7 +3,7 @@ import pandas as pd
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-# Dự đoán dùng mạng NEURAL nhân tạo ANN
+# Dự đoán  dùng mạng NEURAL nhân tạo ANN
 # huynq@isi.com.vn - https://ai.matilda.vn
 
 # Đọc dữ liệu từ file CSV

@@ -13,7 +13,7 @@ df['Date'] = pd.to_datetime(df['Date'])
 df.sort_values('Date', inplace=True)
 
 # Chuẩn bị dữ liệu
-data = df['value'].values
+data = df['Value'].values
 target = np.roll(data, -1)
 
 # Chia dữ liệu thành tập train và tập test

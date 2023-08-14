@@ -5,14 +5,14 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Đường dẫn đến file CSV
-csv_file = '/content/data2.csv'
+csv_file = '/content/data3.csv'
 
 # Đọc dữ liệu từ file CSV
 data = pd.read_csv(csv_file)
 
 # Chia dữ liệu thành features (X) và target (y)
 X = data[['Date']]  # Lấy cột 'Date' làm feature
-y = data['Value']   # Lấy cột 'Value' làm target
+y = data[['Value']]   # Lấy cột 'Value' làm target
 
 # Chuyển đổi cột 'Date' thành dạng số nguyên sử dụng hàm rank()
 X['Date'] = X['Date'].rank(method='dense').astype(int).copy()

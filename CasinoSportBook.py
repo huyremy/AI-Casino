@@ -19,6 +19,6 @@ predictions = model.predict(X_test)
 
 # In kết quả
 print(f"Trận đấu {i+1}: {pred}")
-    # kết quả 1 = đội chủ nhà thắng với tỉ số 5 - 1
-    # kết quả X =  hoà với tỉ số  5 - 1
-    # kết quả 2 =  đội khách thắng với tỉ số 5 - 1  
+    # Kết quả 1 = đội chủ nhà thắng với tỉ số 5 - 1
+    # Kết quả X =  hoà với tỉ số  5 - 1
+    # Kết quả 2 =  đội khách thắng với tỉ số 5 - 1  

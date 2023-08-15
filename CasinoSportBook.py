@@ -18,8 +18,7 @@ X_test = np.array([[5, 1]])
 predictions = model.predict(X_test)
 
 # In kết quả
-for i, pred in enumerate(predictions):
-    print(f"Trận đấu {i+1}: {pred}")
+print(f"Trận đấu {i+1}: {pred}")
     # kết quả 1 = đội chủ nhà thắng với tỉ số 0 - 1
     # kết quả X =  hoà với tỉ số  0 - 1
     # kết quả 2 =  đội khách thắng với tỉ số 0 - 1  

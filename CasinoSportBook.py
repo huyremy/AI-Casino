@@ -4,7 +4,7 @@ import numpy as np
 # Dữ liệu huấn luyện
 X_train = np.array([[2, 1], [1, 1], [6, 1], [4, 4]]) 
 # Trong [2, 1] thì 2 là số bàn thắng đội nhà đã ghi trong những lần va chạm trước 1 là số bàn thắng khách ghi
-#tương tự với [1, 1], [6, 1] [4,4] là kết quả của những trận đấu trước đó
+# Tương tự với [1, 1], [6, 1] [4,4] là kết quả của những trận đấu trước đó
 y_train = np.array(['X', '1', '2', 'X'])
 
 # Tạo mô hình SVM và huấn luyện

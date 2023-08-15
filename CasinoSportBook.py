@@ -13,12 +13,12 @@ model.fit(X_train, y_train)
 
 # Dữ liệu kiểm tra
 X_test = np.array([[5, 1]])
-# Trong [5, 1] là tỉ số dự đoán chung cuộc 5 - 1 nghiêng về đội nhà
+# Trong [5, 1] là tỉ số kiểm thử, ví dụ dự đoán chung cuộc 5 - 1 nghiêng về đội nhà
 # Dự đoán kèo 1X2 cho dữ liệu kiểm tra
 predictions = model.predict(X_test)
 
 # In kết quả
 print(f"Trận đấu {i+1}: {pred}")
-    # kết quả 1 = đội chủ nhà thắng với tỉ số 0 - 1
-    # kết quả X =  hoà với tỉ số  0 - 1
-    # kết quả 2 =  đội khách thắng với tỉ số 0 - 1  
+    # kết quả 1 = đội chủ nhà thắng với tỉ số 5 - 1
+    # kết quả X =  hoà với tỉ số  5 - 1
+    # kết quả 2 =  đội khách thắng với tỉ số 5 - 1  
